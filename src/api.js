@@ -3,7 +3,7 @@
 const base_url = "https://api.rawg.io/api/";
 
 const getCurrentMonth = () => {
-  const month = newDate().getMonth() + 1;
+  const month = new Date().getMonth() + 1;
   if (month < 10) {
     return `0${month}`;
   } else {
@@ -12,7 +12,7 @@ const getCurrentMonth = () => {
 };
 
 const getCurrentDay = () => {
-  const day = newDate().getDate();
+  const day = new Date().getDate();
   if (day < 10) {
     return `0${day}`;
   } else {
